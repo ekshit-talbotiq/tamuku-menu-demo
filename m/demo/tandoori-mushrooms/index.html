@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Smoky, spiced mushrooms with herbs, roasted in the tandoor." /> <meta property="og:title" content="Tandoori mushrooms · Namaste India (sample)" /> <meta property="og:description" content="Smoky, spiced mushrooms with herbs, roasted in the tandoor." /> <meta property="og:image" content="https://ekshit-talbotiq.github.io/tamuku-menu-demo/menu/photos/ni-tandoori-mushroom.jpg" /> <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#1b130e" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="robots" content="noindex" />
+    <link rel="manifest" href="/tamuku-menu-demo/manifest.webmanifest" />
+    <title>Tandoori mushrooms · Namaste India (sample)</title>
+    <!--
+      No web font. A guest opens this once, on a phone, often on a 3G connection in a
+      restaurant basement: a font request is 40-120KB and a render-blocking round trip
+      to a third party, for a card that shows eleven words. The system stack is already
+      on the device and paints immediately.
+
+      Everything below is the first paint. It is inline because a stylesheet request
+      before anything appears is the difference between "instant" and "broken" on a slow
+      link, and it is thrown away the moment the real stylesheet loads.
+    -->
+    <style>
+      :root { color-scheme: light dark; --boot-bg: #faf8f5; --boot-fg: #6b6359; }
+      @media (prefers-color-scheme: dark) { :root { --boot-bg: #14120f; --boot-fg: #a9a094; } }
+      html, body { margin: 0; padding: 0; background: var(--boot-bg); }
+      body { font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+      #boot {
+        min-height: 100dvh; display: flex; align-items: center; justify-content: center;
+        color: var(--boot-fg); font-size: 15px; letter-spacing: 0.01em;
+      }
+    </style>
+    <script>
+      // Brand accent before first paint. The QR code carries the brand's colour, so a guest
+      // who scans a table card sees that brand rather than a flash of somebody else's.
+      try {
+        var t = localStorage.getItem('loyalty.guest.accent');
+        if (t && /^#[0-9a-fA-F]{6}$/.test(t)) {
+          document.documentElement.style.setProperty('--brand-accent', t);
+          var m = document.querySelector('meta[name="theme-color"]');
+          if (m) m.setAttribute('content', t);
+        }
+      } catch (e) { /* private mode: the default accent is correct too */ }
+    </script>
+    <script type="module" crossorigin src="/tamuku-menu-demo/assets/index-DRk0cM6o.js"></script>
+    <link rel="stylesheet" crossorigin href="/tamuku-menu-demo/assets/index-BzTJLol4.css">
+  </head>
+  <body>
+    <div id="root"><div id="boot"></div></div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Rewards card">
+  <rect width="512" height="512" rx="96" fill="#c4622d"/>
+  <rect x="96" y="150" width="320" height="212" rx="28" fill="#faf8f5"/>
+  <rect x="96" y="150" width="320" height="52" rx="28" fill="#1a1815" opacity="0.12"/>
+  <circle cx="176" cy="286" r="26" fill="#c4622d"/>
+  <rect x="226" y="268" width="150" height="16" rx="8" fill="#1a1815" opacity="0.28"/>
+  <rect x="226" y="298" width="96" height="16" rx="8" fill="#1a1815" opacity="0.16"/>
+</svg>
